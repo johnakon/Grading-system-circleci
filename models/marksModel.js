@@ -6,4 +6,6 @@ class Marks {
   }
 }
 
-const score = () => {};
+const score = () => {
+  marks > 50 ? "You have passed" : " you have failed";
+};
