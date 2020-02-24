@@ -1,25 +1,26 @@
-class studentMarks {
-  constructor(gsubject, gmarks) {
+class StudentMarks {
+  constructor(gsubject,gStudent gmarks) {
     this.subject = gsubject;
+    this.student = gStudent;
     this.marks = gmarks;
   }
   computeGrade() {
     switch (true) {
       case this.marks > 79:
-        console.log("Your grade is A, Exellent");
+        console.log(`${this.student} grade in ${this.subject} is A, Exellent`);
         break;
       case this.marks > 69:
-        console.log("Your grade is B, V.Good");
+        console.log(`${this.student} grade in ${this.subject} is B, V.Good`);
         break;
       case this.marks > 59:
-        console.log("Your grade is C, Good");
+        console.log(`${this.student} grade in ${this.subject} is C, Good`);
         break;
       case this.marks > 49:
-        console.log("Your grade is D, Fairly passed");
+        console.log(`${this.student} grade in ${this.subject} is D, Fairly passed`);
         break;
 
       default:
-        console.log("Failed, read harder");
+        console.log(`${this.student} grade in ${this.subject} is F, Failed \n\t\t Read Harder");
         break;
     }
   }
@@ -39,3 +40,5 @@ class studentMarks {
     }
   }
 }
+
+module.export = StudentMarks;
