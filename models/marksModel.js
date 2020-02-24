@@ -7,5 +7,17 @@ class Marks {
 }
 
 const score = () => {
-  marks > 50 ? "You have passed" : " you have failed";
+  if (this.marks > 80) {
+    console.log("you have scored an A");
+  } else if (this.marks > 70 && marks < 80) {
+    console.log("You have scored a B");
+  } else if (this.marks > 60 && marks < 70) {
+    console.log("You have scored a C");
+  } else if (this.marks > 50 && marks < 60) {
+    console.log("You have scored a D");
+  } else if (this.marks > 40 && marks < 50) {
+    console.log("You have scored a E");
+  } else if (this.marks > 60 && marks < 70) {
+    console.log("You have scored a C");
+  }
 };
