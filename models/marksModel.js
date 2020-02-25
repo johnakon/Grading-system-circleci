@@ -6,23 +6,31 @@ class Marks {
   }
 
   computeScore() {
+    var score = null;
     if (this.marks >= 80) {
       console.log("you have scored an A");
+      score = "A";
     } else if (this.marks >= 70 && this.marks < 80) {
       console.log("You have scored a B");
+      score = "B";
     } else if (this.marks >= 60 && this.marks < 70) {
       console.log("You have scored a C");
+      score = "C";
     } else if (this.marks >= 50 && this.marks < 60) {
       console.log("You have scored a D");
+      score = "D";
     } else if (this.marks >= 40 && this.marks < 50) {
       console.log("You have scored a E");
+      score = "E";
     } else if (this.marks >= 0 && this.marks < 40) {
       console.log("You have failed");
+      score = "F";
     }
+    return score;
   }
 
   isValidate() {
-    valid = true;
+    let valid = true;
     if (this.Student === null) {
       valid = false;
       console.log("Student not registered");
@@ -39,7 +47,7 @@ class Marks {
       valid = false;
       console.log("Marks can't be morethan 100");
     }
-    // return valid;
+    return valid;
   }
 }
 
